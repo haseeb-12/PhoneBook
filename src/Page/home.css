@@ -1,0 +1,262 @@
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+h2{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+    column-gap: 3rem;
+    margin-top: 1rem;
+}
+
+.phone_heading {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.phone_heading .avatar {
+    font-size: 2.2rem;
+    color: #1e8cfb;
+
+}
+.phone_heading h2{
+    color:gray; 
+}
+
+.contact_search{
+    width: 22rem;
+    max-width:90%;
+   
+}
+.contact_search input{
+    width:100%;
+    padding: .5rem;
+    font-size: 1.1rem;
+    color:gray;
+    outline: none;
+    border-radius: .3rem;
+    border: none;
+    background: #f1f3f4;
+}
+
+@media only screen and (max-width:400px) {
+    .header{
+        column-gap: 1rem;
+    }
+    .contact_search input{
+        width:5rem
+    }
+}
+.contact_search :focus {
+    background: #fff;
+    box-shadow: 0 0 .1rem .1rem rgba(0,0,0,.1);
+}
+.create_btn button{
+    letter-spacing: 1px;
+    background: transparent;
+    padding: .5rem .3rem;
+    border-radius: .5rem;
+    border: none;
+    box-shadow: 0 0 .1rem .1rem rgba(0,0,0,.2);
+}
+.create_btn .icon{
+    color:#1e8cfb;
+}
+
+/* add page */
+
+.add_contact{
+    padding: 2rem 0;
+}
+.add_avatar{
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+}
+.add_avatar .icon{
+font-size: 10.5rem;
+color: rgba(128, 128, 128, 0.3);
+
+}
+
+
+/* forn */
+.form_add{
+    padding: 4rem 0;
+    color: gray;
+}
+
+.add_data input{
+    font-size: 1.2rem;
+    font-weight: 300;
+    color:rgba(128, 128, 128, 0.897);
+    width: 30rem;
+    border: none;
+    border-bottom: 1px solid gray;
+    margin-bottom: 1rem;
+    padding-bottom: .3rem;
+}
+.add_data input:invalid{
+    border-bottom: 2px solid red;
+    animation:shake .3s 3
+}
+@keyframes shake{
+    25%{
+        translate: 6px 0
+    }
+    50%{
+        translate: -6px 0;
+    }
+    75%{
+        translate: 6px 0;
+    }
+}
+.add_data label{
+    display: inline-block;
+    padding-top: 1rem;
+    font-size: 1.6rem;
+    margin-right: 1rem;
+    
+}
+.form_add button{
+margin-top: 2rem;
+color:#fff;
+padding: .6rem 1.3rem;
+background:rgba(0, 0, 0, 0.61);
+border-radius: .3rem;
+border: none;
+letter-spacing: 1px;
+}
+
+/* home page */
+
+table{
+    border-collapse: collapse;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.circle{
+   width: 2rem;
+   height: 2rem;
+   border-radius: 50%; 
+   text-align: center;
+   line-height: 2rem;
+   text-transform: uppercase;
+}
+
+th{
+    width:50%;
+    padding: 1rem 0;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+.table_data td{
+    padding: 1rem .5rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: left;
+}
+.table_data:hover{
+    background: rgba(128, 128, 128, 0.2);
+}
+
+
+
+
+/* single */
+.single_data{
+    padding: 1rem 0;
+}
+
+.upper_data{
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+  
+}
+.upper_data h2{
+   font-size: 2.5rem; 
+   font-weight: 400;
+   letter-spacing: 2px;
+}
+.upper_circle{
+    margin-right: 2rem;
+    text-align: center;
+    line-height: 13rem;
+    width:13rem;
+    height:13rem;
+    border-radius: 50%;
+    font-size: 7.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.lower_data{
+    margin: 1.4rem 0;
+    width: 50rem;
+    max-width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding-left: 10px;
+    box-shadow: 0 0 0 .1rem rgba(128, 128, 128, 0.3);
+}
+.lower_data span{
+    color:rgb(0, 102, 255);
+    font-size: 1.2rem;
+}
+
+.upper_button{
+    display: flex;
+    justify-content:flex-end ;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 1.2rem;
+}
+.upper_button button{
+    padding: .3rem .8rem;
+    color:white;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.3rem;
+    margin-left: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a:link ,
+  a:visited ,
+  a:hover ,
+  a:active 
+{
+    color:#111
+}
